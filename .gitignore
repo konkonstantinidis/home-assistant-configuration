@@ -9,3 +9,4 @@ known_devices.yaml
 *.db*
 home-assistant_v2.db-wal
 home-assistant_v2.db-shm
+home-assistant_v2.db
