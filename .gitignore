@@ -6,7 +6,6 @@ ip_bans.yaml
 secrets.yaml
 known_devices.yaml
 *.log.*
-*.db*
 home-assistant_v2.db-wal
-home-assistant_v2.db-shm
 home-assistant_v2.db
+home-assistant_v2.db-shm
