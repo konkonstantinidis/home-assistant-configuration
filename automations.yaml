@@ -1,0 +1,30 @@
+- alias: 'Automatically start vacuum on weekdays'
+  trigger:
+    - platform: time
+      at: "18:30"
+  condition:
+    - condition: time
+      weekday:
+        - mon 
+        - tue 
+        - wed 
+        - thu 
+        - fri 
+  action:
+    - service: vacuum.start
+      target:
+        entity_id: vacuum.robot_vacuum
+
+- alias: 'Automatically start vacuum on weekends'
+  trigger:
+    - platform: time
+      at: "12:30"
+  condition:
+    - condition: time
+      weekday:
+        - sat 
+        - sun 
+  action:
+    - service: vacuum.start
+      target:
+        entity_id: vacuum.robot_vacuum
