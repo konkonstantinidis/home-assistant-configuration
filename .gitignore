@@ -7,3 +7,5 @@ secrets.yaml
 known_devices.yaml
 *.log.*
 *.db*
+home-assistant_v2.db-wal
+home-assistant_v2.db-shm
